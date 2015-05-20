@@ -5,11 +5,15 @@ git clone https://github.com/zoromask/ng-gulp-sass-jspm-babel-es6.git
 ## 1.Install Nodejs:
 * Download source from https://nodejs.org/
 * Extract file tar.gz and install nodejs. How to install file tar.gz (http://askubuntu.com/questions/25961/how-do-i-install-a-tar-gz-or-tar-bz2-file).
-* Test: node -v (if you install nodejs by sudo apt-get install nodejs, your gulp will not run)
+* Test: **node** -v (if you install nodejs by sudo apt-get install nodejs, your gulp will not run)
 
-- install all npm and bower dependencies
-
-**Note:** If `npm install` fails during dependency installation it will be likely caused by `gulp-imagemin`. In that case remove `gulp-imagemin` dependency from `package.json`, run `npm install` again and then install `gulp-imagemin` separately with following command: `npm install gulp-imagemin --save-dev`
+- install all npm and bower dependencies. After run 2 below commands, gulp and other plugins will be downloaded and installed in your project.
+```bash
+npm install
+```
+```bash
+bower install
+```
 
 ## 2. Watch files
 ```bash
